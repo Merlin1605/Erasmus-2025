@@ -1,39 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header id = "header" class="hero">
-    <div  id = "navbar" class="navbar top">
-      <a href="#header">
-        <h1 class = "logo">
-          <span class = "text-primary"><i class="fa-solid fa-earth-europe"></i>
-          </i>  BITL</span> Blog
-        </h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class = "content">
-      <!--
-      <h1>Before It Is Too Late</h1>
-      <p> An Erasmus+ Project</p>-->
-    </div>
-  </header>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=
+  , initial-scale=1.0"
+        />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="romania.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div id="navbar" class="navbar top">
+                <a href="../index.html">
+                    <h1 class="logo">
+                        <span class="text-primary"
+                            ><i class="fa-solid fa-earth-europe"></i> BITL</span
+                        >
+                        Blog
+                    </h1>
+                </a>
+            </div>
+        </header>
+        <section class="introducting-section">
+            <div>
+                <h1 class="title">
+                    <span class="text-scondary">Romania</span>
+                    in the ERASMUS+ project "Before it is too late"
+                </h1>
+            </div>
+            <img
+                class="poza-judete-participante"
+                src="./Erasmus_romania.png"
+                alt="a map of Romania in witch the participating cities are highlited"
+            />
+        </section>
+        <section class="info-section">
+            <h2 class="text-scondary meet-us">Meet us</h2>
+            <p class="description">
+                From <span class="highlited text-scondary">Romania</span>, two
+                schools are taking part in this Erasmus project. One of them
+                proudly represents
+                <span class="highlited text-scondary">Bucharest</span> , the
+                vibrant capital of the country, known as
+                <span class="highlited text-scondary"
+                    >Technical College "Grigore Cerchez"</span
+                >
+                . The other school embraces its roots in
+                <span class="highlited text-scondary">Vaslui</span> , where it
+                flourishes under the name of
+                <span class="highlited text-scondary"
+                    >Theoretical High School "Emil Racoviță"</span
+                >
+                .
+            </p>
+            <div class="licee">
+                <article>
+                    <img
+                        class="imagini-licee"
+                        src="./liceu_Bucuresti.jpg"
+                        alt="Technical College from Bucharest"
+                    />
+                    <p class="photo-description">
+                        Technical College "Grigore Cerchez"
+                    </p>
+                </article>
+                <article>
+                    <img
+                        class="imagini-licee"
+                        src="./LER.jpg"
+                        alt="Theoretical
+                    High School from Vaslui"
+                    />
+                    <p class="photo-description">
+                        Theoretical High School "Emil Racoviță"
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2 class="text-scondary meet-us">About the mobility</h2>
+            <p class="description">
+                The mobility adventure in Romania is set to take place in the
+                city of
+                <span class="highlited text-scondary">Bucharest</span> at the
+                Technical College "Grigore Cerchez", between
+                <span class="highlited text-scondary"
+                    >16 and 20 October 2023</span
+                >. Throughout this journey, we will explore the themes of
+                climate change and sustainability, aiming to raise awareness and
+                find innovative solutions to mitigate its impact.
+            </p>
+        </section>
+        <script>
+            ScrollReveal().reveal(".title", {
+                delay: 100,
+                duration: 500,
+                distance: "20px",
+                origin: "right",
+            });
+            ScrollReveal().reveal(".poza-judete-participante", {
+                delay: 100,
+                duration: 500,
+            });
+        </script>
+    </body>
 </html>
