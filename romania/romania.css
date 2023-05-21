@@ -1,0 +1,163 @@
+/* page adjustments */
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans";
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* culori */
+.text-primary {
+    color: #2b82a1;
+}
+
+.text-scondary {
+    color: #eb9004;
+}
+
+/* NAVBAR */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #222;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    padding: 80px 10px;
+    transition: 0.5s;
+}
+.navbar a {
+    color: #222;
+    padding: 10px 20px;
+    transition-duration: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+    border-bottom: #2b82a1 2px solid;
+    background-color: #222;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+/* PRIMA SECTIUNE - INTRODUCEREA */
+.introducting-section {
+    display: flex;
+    padding: 7rem 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: calc(100vh - 160px);
+}
+.title {
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+}
+.poza-judete-participante {
+    width: clamp(23rem, 55vw, 40rem);
+    box-shadow: 20px 10px 70px #22222241;
+}
+
+/* SECOND SECTION */
+.info-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.meet-us {
+    font-size: clamp(3rem, 3.5vw, 4rem);
+    text-align: center;
+}
+.description {
+    max-width: 90%;
+    font-size: clamp(1.5rem, 7vw, 2rem);
+}
+.licee {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imagini-licee {
+    width: clamp(20rem, 50vw, 30rem);
+    height: 20rem;
+    box-shadow: 20px 10px 70px #22222241;
+}
+.photo-description {
+    font-weight: bold;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .introducting-section {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        height: auto;
+    }
+    .info-section {
+        padding: 1rem;
+    }
+    .description {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-section {
+        padding: 5rem;
+    }
+}
+@media (max-width: 1300px) {
+    .licee {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .imagini-licee {
+        height: auto;
+    }
+}
