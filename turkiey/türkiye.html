@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <!-- saved from url=(0045)file:///C:/Users/sinsh/Downloads/romania.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./türkiye_files/all.min.css"> 
-  <link rel="stylesheet" href="file:///C:/Users/sinsh/Downloads/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./türkiye_files/css2" rel="stylesheet">
-</head>
-<body>
-  <header id="header" class="hero">
-    <div id="navbar" class="navbar top">
-      <a href="file:///C:/Users/sinsh/Downloads/romania.html#header">
-        <h1 class="logo">
-          <span class="text-primary"><i class="fa-solid fa-earth-europe"></i>
-            BITL</span> Blog
-        </h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="file:///C:/Users/sinsh/Downloads/romania.html#header">Home</a></li>
-          <li><a href="file:///C:/Users/sinsh/Downloads/romania.html#about">About</a></li>
-          <li><a href="file:///C:/Users/sinsh/Downloads/romania.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="content">
-      <!--
-      <h1>Before It Is Too Late</h1>
-      <p> An Erasmus+ Project</p>-->
-    </div>
-  </header>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-</body></html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./türkiye_files/all.min.css" />
+    <link rel="stylesheet" href="file:///C:/Users/sinsh/Downloads/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="hero">
+      <div id="navbar" class="navbar top">
+        <a href="#header">
+          <h1 class="logo">
+            <span class="text-primary"
+              ><i class="fa-solid fa-earth-europe"></i> BITL</span
+            >
+            Blog
+          </h1>
+        </a>
+      </div>
+    </header>
+    <div class="height-wrap">
+      <div class="flexy">
+        <h2 class="background-text">Turkiye</h2>
+        <span class="turk-info"
+          >in the <span class="text-primary">ERASMUS+</span> project
+          <span class="text-scondary nowrap">"Before it is too late"</span>
+        </span>
+      </div>
+    </div>
+    <main class="">
+      <span>
+        These are the two <span class="text-primary">Turkish</span> high schools
+        that took part in this project:
+      </span>
+
+      <div class="row-flex">
+        <div class="card">
+          <h3>Liceu nazili</h3>
+          <img src="../PHOTOS/ler1-1024x768.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h3>Liceu Cucu</h3>
+          <img src="../PHOTOS/ler1-1024x768.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      ScrollReveal().reveal('.background-text', {
+        delay: 150,
+        opacity: 0,
+        distance: '250px',
+        duration: 750,
+      });
+      ScrollReveal().reveal('.turk-info', {
+        delay: 250,
+        opacity: 0,
+        distance: '250px',
+        duration: 750,
+        origin: 'left',
+        delay: 550,
+      });
+      ScrollReveal().reveal('.card', {
+        delay: 150,
+        opacity: 0,
+        distance: '250px',
+        origin: 'bottom',
+        duration: 850,
+        interval: 500,
+      });
+    </script>
+  </body>
+</html>
